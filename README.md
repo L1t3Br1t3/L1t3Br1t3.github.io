@@ -3,10 +3,10 @@
 ## Background 
 Samsung Pay is Samsung's "wallet" app that allows you to use your phone to store cards and make payments using your phone, similar to Google Pay and Apple pay. What separates Samsung Pay from other apps is on Samsung phones there is an added technology called Magnetic Secure Transmission (MST). MST mimics magnetic swipes, such as when you swipe a debit card at a terminal to pay for an item. However, using Samsung Pay we can expand the capabilities of this technology to do more than just pay for a morning coffee. 
 
-At the College I attend, every student and employee has an ID card that you can swipe in one of these ![card swipe](https://github.com/L1t3Br1t3/L1t3Br1t3.github.io/blob/master/ITEMS_SWIPECARD_LENEL_LNL-2005W.jpg) to unlock doors and get into buildings. After losing my card one day and getting locked out of my building, I had an idea: Could I use put my ID card in Samsung Pay so I can get back to my room even if I don't have my card on me? 
+At the College I attend, every student and employee has an ID card that you can swipe in one of these ![card swipe](https://raw.githubusercontent.com/L1t3Br1t3/L1t3Br1t3.github.io/master/ITEMS_SWIPECARD_LENEL_LNL-2005W.jpg) to unlock doors and get into buildings. After losing my card one day and getting locked out of my building, I had an idea: Could I use put my ID card in Samsung Pay so I can get back to my room even if I don't have my card on me? 
 
 ## Step 1: Find Out What Data Is On My ID Card
-Before putting any information into Samsung Pay about my ID Card, I needed to figure out what data was on the card. I got a magnetic card reader ![card reader](https://github.com/L1t3Br1t3/L1t3Br1t3.github.io/blob/master/card_reader.jpg) to accomplish this. Open up notepad, plug in the reader to your computer, and swipe the card. For my card, this resulted in the output in the format
+Before putting any information into Samsung Pay about my ID Card, I needed to figure out what data was on the card. I got a magnetic card reader ![card reader](https://raw.githubusercontent.com/L1t3Br1t3/L1t3Br1t3.github.io/master/card_reader.jpg) to accomplish this. Open up notepad, plug in the reader to your computer, and swipe the card. For my card, this resulted in the output in the format
 ```
 ;5555555501?
 ```
@@ -15,11 +15,11 @@ In my case, my school's ID cards use "Track 2", which begins with the "start sen
 ## Step 2: Putting data in Samsung Pay
 Now that I knew what data was on my card, it was time to put it in a card in Samsung Pay. Open Samsung Pay, go to "Add card", and select "Membership". At a glance, "credit/debit card", "SamsungPay Cash", and "PayPal" all sounded like they would not work for this purpose because the card numbers are longer, there are expiration dates, and security codes of some sort. "Gift" cards sounded promising, but they also add the complexity of PINs. This leaves "Membership". 
 
-There are a ton of different cards to choose from, but for our purposes we can break them into two different groups. Ones that just create a barcode, and others that actually enable the magnetic swipe using the MST. If it just creates a barcode, such as a "24 Hour Fitness" membership card ![barcode](https://github.com/L1t3Br1t3/L1t3Br1t3.github.io/blob/master/barcode.jpg)
+There are a ton of different cards to choose from, but for our purposes we can break them into two different groups. Ones that just create a barcode, and others that actually enable the magnetic swipe using the MST. If it just creates a barcode, such as a "24 Hour Fitness" membership card ![barcode](https://raw.githubusercontent.com/L1t3Br1t3/L1t3Br1t3.github.io/master/barcode.jpg)
 it won't work for our purposes.
 
 At the moment, I know the "Panera Bread" card uses MST, so select the Panera Bread card. I do not know what other cards use MST as opposed to just making a barcode, but you only need to find one to make this work. 
-![panera](https://github.com/L1t3Br1t3/L1t3Br1t3.github.io/blob/master/panera.jpg)
+![panera](https://raw.githubusercontent.com/L1t3Br1t3/L1t3Br1t3.github.io/master/panera.jpg)
 
 When you add a new card, enter the numbers that you got from the swipe (e.g. 5555555501), or your ID plus the two numbers in the "Card number (required)" field. Don't include the start and end characters (';' and '?'). You'll know if the card uses MST when you select the card and press "Use card", the message "Place the back of your phone against the card reader." pops up. If you see that, then success! To open doors now as if you were swiping your actual ID card, select that Samsung Pay card, press "use card", and hold your phone against the card reader. 
 
